@@ -5,25 +5,19 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import BeerIndex from './components/BeerIndex'
-import BeerCard from './components/BeerCard'
+import ShowBeer from './components/ShowBeer'
 
 function App() {
-  return (
 
-    
-  
-  
+  return (  
     <BrowserRouter> 
       <Navbar /> 
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/beers/:beerId" component={ShowBeer} />
         <Route path="/BeerIndex" component={BeerIndex} /> 
-        <Route path="/beers/:Id" component={BeerCard} />
-       
       </Switch>
     </BrowserRouter>
-    
-    
   
   )
 }
