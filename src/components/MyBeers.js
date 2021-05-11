@@ -1,32 +1,14 @@
 function Mybeers() {
 
-  const favBeer = window.localStorage.getItem('beer')
-  console.log(favBeer)
+  const favBeers = JSON.parse(window.localStorage.getItem('beers'))
+  console.log(favBeers)
 
 
 
   return (
-    <h4>{favBeer}</h4>
+    <h1>gone wrong Thank god you did it</h1>
   )
 
 }
-
-
-/// add beer id as value for button, create a function to handle the click. 
-
-
-
-///setItem in window.loacalStorage (by id)
-
-///push the local storage data to an empty array, which we can call myBeersArray =[]
-
-/// [...myBeersArray, newBeer]
-
-/// display beer in local storage on my beers page
-
-
-
-
+  
 export default Mybeers
-
-

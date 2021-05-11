@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { useHistory } from 'react-router'
 
 
 
@@ -8,6 +9,7 @@ import axios from 'axios'
 function ShowBeer() {
   let favBeerArray = []
   const { beerId } = useParams()
+  const history = useHistory()
   const [beer, setBeers] = React.useState(null)
   // const [favBeer, setFavBeer] = React.useState('')
 
@@ -22,13 +24,17 @@ function ShowBeer() {
 
   const handleClick = (e) => {
     console.log(e.target.value)
-    const favBeer = window.localStorage.setItem('beer', beer.id)
+    const favBeers = JSON.parse(window.localStorage.getItem('beers')) || []
     console.log(beer)
     favBeerArray = [...favBeerArray, beer]
+    favBeers.push(beer)
+    localStorage.setItem('beers',JSON.stringify(favBeers))
     console.log(favBeerArray)
+    history.push('/myBeers')
   
   }
 
+  /// [0]
 
   return (
     <section>
