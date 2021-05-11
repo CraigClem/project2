@@ -14,23 +14,38 @@ function BeerIndex() {
   },[])
   console.log(beers)
 
-  return ( 
-    <> {
-      beers ? 
 
-        beers.map(beer =>  {
-          return  <Link key={beer.id} to={`/beers/${beer.id}`}>
-            <div key={beer.id}> 
-              <p>{beer.name}</p>
-              <p>{beer.tagline}</p>
-              <img src={beer.image_url} alt={beer.name} />
-            </div>
-          </Link>
-        }
-        )
-        :       
-        <p>Loading....</p>
-    }
+  const handleInput = (e) => {
+    console.log(e.target.value)
+  }
+
+
+  return ( 
+    <>
+      <input className ="input is-medium" type="text" placeholder="Search... " onChange={handleInput}></input>
+      <div className="main-container"> {
+        beers ? 
+
+          beers.map(beer =>  {
+            return  <Link key={beer.id} to={`/beers/${beer.id}`}>
+              <div className="container-beer" key={beer.id}> 
+              
+                <div className="text-name">
+                  <h1 className ="main-name">{beer.name}</h1>
+                  <p>`{beer.tagline}`</p>
+                </div>
+                <figure>
+                  <img className="beers" src={beer.image_url} alt={beer.name} />
+                </figure>
+              </div>
+            
+            </Link>
+          }
+          )
+          :       
+          <p>Loading....</p>
+      }
+      </div>
     </>
   )
 

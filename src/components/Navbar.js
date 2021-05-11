@@ -6,10 +6,12 @@ function Navbar() {
     <>
       <header>
         <nav>
-          <div>
-            
-            <Link to="/BeerIndex">Beers</Link>
+          <div className="navbar-brand">
             <Link to="/">Home</Link>
+            <Link to="/BeerIndex">All Beers</Link>
+            <Link to="/myBeers">My Beers</Link>
+            <Link to="/about">About</Link>
+            
           </div>
         </nav>
       </header>
