@@ -115,3 +115,23 @@ p {
   justify-content:center;
   align-items:center;
 }
+
+.beer-display {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction:column;
+
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 8px;
+  
+}
+
+h3 {
+  font-size: 30px;
+}

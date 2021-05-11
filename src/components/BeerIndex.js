@@ -2,7 +2,10 @@ import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
+
+
 function BeerIndex() {
+  const [searchTerm, setSearchTerm] = React.useState('')
   const [beers, setBeers] = React.useState(null)
   React.useEffect(() => {
     const getData = async () => {
@@ -16,17 +19,28 @@ function BeerIndex() {
 
 
   const handleInput = (e) => {
+    setSearchTerm(e.target.value)
     console.log(e.target.value)
   }
 
+  function filterBeers() {
+    return beers.filter(beer => {
+      console.log('hello')
+      return (
+        beer.name.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+  
+    })
+  }
 
+  
   return ( 
     <>
       <input className ="input is-medium" type="text" placeholder="Search... " onChange={handleInput}></input>
       <div className="main-container"> {
         beers ? 
 
-          beers.map(beer =>  {
+          filterBeers().map(beer =>  {
             return  <Link key={beer.id} to={`/beers/${beer.id}`}>
               <div className="container-beer" key={beer.id}> 
               
@@ -40,6 +54,7 @@ function BeerIndex() {
               </div>
             
             </Link>
+           
           }
           )
           :       

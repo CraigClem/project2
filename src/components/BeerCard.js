@@ -1,32 +1,32 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+// import React from 'react'
+// import { Link } from 'react-router-dom'
 
 
 
 
-function BeerCard({ Id, name, tagline, description }) {
-  return (
-    <>
+// function BeerCard({ Id, name, tagline, description }) {
+//   return (
+//     <>
 
-      <Link to={`/BeerIndex/${Id}`}>
-        <div>
-          <div>{name}</div>
-        </div>
-        <div>
-          <div>{tagline}</div>
-        </div>
-        <div>
-          <div>{description}</div>
-        </div>
-        <div>
+//       <Link to={`/BeerIndex/${Id}`}>
+//         <div>
+//           <div>{name}</div>
+//         </div>
+//         <div>
+//           <div>{tagline}</div>
+//         </div>
+//         <div>
+//           <div>{description}</div>
+//         </div>
+//         <div>
           
-        </div>
-      </Link>
-      : 
+//         </div>
+//       </Link>
+//       : 
 
-      <p>Loading...</p>
-    </>
-  )
-}
+//       <p>Loading...</p>
+//     </>
+//   )
+// }
 
-export default BeerCard
+// export default BeerCard
