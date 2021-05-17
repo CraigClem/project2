@@ -19,7 +19,7 @@ function App() {
         <Route path="/beers/:beerId" component={ShowBeer} />
         <Route path="/BeerIndex" component={BeerIndex} /> 
         <Route path="/About" component={About}/>
-        <Route pth="/MyBeers" component={MyBeers} />
+        <Route path="/myBeers" component={MyBeers} />
       </Switch>
     </BrowserRouter>
   

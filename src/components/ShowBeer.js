@@ -25,16 +25,14 @@ function ShowBeer() {
   const handleClick = (e) => {
     console.log(e.target.value)
     const favBeers = JSON.parse(window.localStorage.getItem('beers')) || []
-    console.log(beer)
     favBeerArray = [...favBeerArray, beer]
     favBeers.push(beer)
     localStorage.setItem('beers',JSON.stringify(favBeers))
-    console.log(favBeerArray)
     history.push('/myBeers')
   
   }
 
-  /// [0]
+  
 
   return (
     <section>

@@ -25,10 +25,8 @@ function BeerIndex() {
 
   function filterBeers() {
     return beers.filter(beer => {
-      console.log('hello')
       return (
-        beer.name.toLowerCase().includes(searchTerm.toLowerCase())
-      )
+        beer.name.toLowerCase().includes(searchTerm.toLowerCase()))
   
     })
   }
@@ -44,7 +42,6 @@ function BeerIndex() {
           filterBeers().map(beer =>  {
             return  <Link key={beer.id} to={`/beers/${beer.id}`}>
               <div className="container-beer" key={beer.id}> 
-              
                 <div className="text-name">
                   <h1 className ="main-name">{beer.name}</h1>
                   <p>`{beer.tagline}`</p>
@@ -53,9 +50,7 @@ function BeerIndex() {
                   <img className="beers" src={beer.image_url} alt={beer.name} />
                 </figure>
               </div>
-            
-            </Link>
-           
+            </Link> 
           }
           )
           :       
@@ -64,7 +59,6 @@ function BeerIndex() {
       </div>
     </>
   )
-
 }
 
 export default BeerIndex

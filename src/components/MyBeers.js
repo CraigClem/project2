@@ -1,4 +1,4 @@
-function Mybeers() {
+function MyBeers() {
 
   const favBeers = JSON.parse(window.localStorage.getItem('beers'))
   console.log(favBeers)
@@ -6,9 +6,9 @@ function Mybeers() {
 
 
   return (
-    <h1>gone wrong Thank god you did it</h1>
+    <h5>Details to follow</h5>
   )
 
 }
   
-export default Mybeers
+export default MyBeers
