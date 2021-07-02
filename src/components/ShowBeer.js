@@ -7,11 +7,11 @@ import { useHistory } from 'react-router'
 
 
 function ShowBeer() {
+  
   let favBeerArray = []
   const { beerId } = useParams()
   const history = useHistory()
   const [beer, setBeers] = React.useState(null)
-  // const [favBeer, setFavBeer] = React.useState('')
 
   React.useEffect(() => {
     const getData = async () => {
@@ -20,7 +20,6 @@ function ShowBeer() {
     }
     getData()
   },[beerId])
-
 
   const handleClick = (e) => {
     console.log(e.target.value)
@@ -31,8 +30,6 @@ function ShowBeer() {
     history.push('/myBeers')
   
   }
-
-  
 
   return (
     <section>
@@ -52,11 +49,8 @@ function ShowBeer() {
           <p>... Loading</p>
         }
       </div>
-
     </section>
-  )  
-    
-
+  )    
 }
 
 export default ShowBeer

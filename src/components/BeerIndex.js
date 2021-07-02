@@ -16,7 +16,7 @@ function BeerIndex() {
     }
     getData()
   },[])
-  
+
   console.log(beers)
 
 

@@ -1,4 +1,4 @@
-function MyBeers() {
+function MyBeers(beer) {
 
   const favBeers = JSON.parse(window.localStorage.getItem('beers'))
   console.log(favBeers)
@@ -9,7 +9,7 @@ function MyBeers() {
     <>
       <p>My Beers</p>
       <div className="favBeers">
-        <ul>
+        <ul key={beer.id}>
           <li>
             {favBeers.map(beer => beer.name)}
           </li>
