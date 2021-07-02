@@ -6,7 +6,17 @@ function MyBeers() {
 
 
   return (
-    <h5>Details to follow</h5>
+    <>
+      <p>My Beers</p>
+      <div className="favBeers">
+        <ul>
+          <li>
+            {favBeers.map(beer => beer.name)}
+          </li>
+        </ul>
+      </div>
+
+    </>
   )
 
 }

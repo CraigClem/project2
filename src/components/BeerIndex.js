@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 function BeerIndex() {
   const [searchTerm, setSearchTerm] = React.useState('')
   const [beers, setBeers] = React.useState(null)
+
   React.useEffect(() => {
     const getData = async () => {
       const response = await axios.get('https://api.punkapi.com/v2/beers')
@@ -15,6 +16,7 @@ function BeerIndex() {
     }
     getData()
   },[])
+  
   console.log(beers)
 
 
