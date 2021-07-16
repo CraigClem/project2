@@ -21,8 +21,7 @@ function ShowBeer() {
     getData()
   },[beerId])
 
-  const handleClick = (e) => {
-    console.log(e.target.value)
+  const handleClick = () => {
     const favBeers = JSON.parse(window.localStorage.getItem('beers')) || []
     favBeerArray = [...favBeerArray, beer]
     favBeers.push(beer)

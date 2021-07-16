@@ -141,12 +141,14 @@ const handleInput = (e) => {
 ```
 
 
-- ShowBeer
+## ShowBeer
 
-The ShowBeer page is a detailed view of a single beer. We used { useParms } and { useHistory }
+The ShowBeer page is a detailed view of a single beer. We used { useParms } to 
 
-- MyBeers 
-- About
+## MyBeers 
+
+
+## About
 ​
 
 ​
