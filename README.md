@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ​
 ## Brief
 ​
-Using React we had 48hrs to create an app which consumned a public API, had several components and used 
+Using React we had 48hrs to create an app which consumned a public API and had several components.
 ​
 ### Technnolgies
 ​
@@ -68,7 +68,7 @@ And we Route each path to its component.
 
 ## BeerIndex
 
-The BeerIndex is where most the apps functionality takes place as this where we make our async GET requests to the API, set state and display the results. We used React.UseState and Axios to make our GET requests on the intital page mount and then stored the results im state (setBeers).
+The BeerIndex is where most the apps functionality takes place as this where we make our async GET requests to the API, set state and display the results. We used React.UseState and Axios to make our GET requests on the intital page mount and then stored the results in state (setBeers).
 
 ```js
   const [beers, setBeers] = React.useState(null)
@@ -84,7 +84,7 @@ The BeerIndex is where most the apps functionality takes place as this where we 
 
 ```
 
-once we had accessed array of objects(beers) and stored the data we could then map() the results and using JSX display the data on the page using the dot notation. 
+Once we had accessed the array of objects (beers) and stored the data we could then map() the results and using JSX display the data on the page using the dot notation. 
 
 ```js
 
@@ -111,7 +111,7 @@ once we had accessed array of objects(beers) and stored the data we could then m
 
 ``` 
 
-Within the BeerIndex page we also included a search bar which filters the data from the API based on the beers name and the users search term. For this, we created a filtered beer function which we actually used to map the data above.
+Within the BeerIndex page we also included a search bar which filters the data from the API based on the beers name and the users search term. For this, we created a filter beers function which we also used to map the data above.
 
 ```js 
 
@@ -125,7 +125,7 @@ Within the BeerIndex page we also included a search bar which filters the data f
 
 ```
 
-We the set in state the intial searchTerm when the page first mounts to an empty string and created a function to handle to the input of the users searchTerm
+We then set in state the initial searchTerm for the first page mount which is an empty string and then created a function to handle to the input of the users searchTerm
 
 ```js
 
@@ -143,7 +143,7 @@ const handleInput = (e) => {
 
 - ShowBeer
 
-The ShowBeer page is a detailed overview of a single beer. We used { useParms } and { useHistory }
+The ShowBeer page is a detailed view of a single beer. We used { useParms } and { useHistory }
 
 - MyBeers 
 - About
