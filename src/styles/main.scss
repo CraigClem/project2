@@ -35,6 +35,10 @@ a {
   padding: 20px;
 }
 
+a :hover {
+  color:red;
+}
+
 Link {
 
 display: flex;
@@ -54,11 +58,9 @@ justify-content:space-around;
 .container-beer {
 
   display: flex;
-  // justify-content:center;
   flex-direction: column;
   justify-content:space-around;
   border: 4px, solid, black;
- 
 }
 
 figure {
@@ -103,10 +105,10 @@ p {
 }
 
 .about-container {
- display:flex;
- justify-content:center;
- align-items:center;
- flex-direction:column;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
 
 }
 
