@@ -143,9 +143,84 @@ const handleInput = (e) => {
 
 ## ShowBeer
 
-The ShowBeer page is a detailed view of a single beer. We used { useParms } to 
+The ShowBeer page is a detailed view of a single beer. We used the { useParams } hook to create a unique path for each beer which was the beer Objects id. [ SetBeers(response.data[0]) ]
+
+We then wrapped our BeerIndex in a Link tag with the to prop directing the user to the specific beer which matched the useParams { beerId }.
+
+```js
+ const { beerId } = useParams()
+
+ React.useEffect(() => {
+    const getData = async () => {
+      const response = await axios.get(`https://api.punkapi.com/v2/beers/${beerId}`)
+      setBeers(response.data[0])
+    }
+    getData()
+  },[beerId])
+ 
+```
+```js
+  <Route path="/beers/:beerId" component={ShowBeer} />
+``` 
+
+```js 
+return  <Link key={beer.id} to={`/beers/${beer.id}`}>
+```
+
 
 ## MyBeers 
+
+We created the MyBeers component so that user could create and store a list of the beers they had tried or of their favorite beers. Within the ShowBeer component we added a button which when clicked, stored the specific beer in local storage using setItem, updated the favBeerArray and then pushed the user to the myBeers page using the useHistory hook. 
+
+```js
+const history = useHistory()
+```
+
+```js
+
+let favBeerArray = []
+
+```
+
+
+```js
+
+ const handleClick = () => {
+    const favBeers = JSON.parse(window.localStorage.getItem('beers')) || []
+    favBeerArray = [...favBeerArray, beer]
+    favBeers.push(beer)
+    localStorage.setItem('beers',JSON.stringify(favBeers))
+    history.push('/myBeers')
+  
+  }
+
+ ``` 
+
+ We then got the favortite beer array from local storage and displayed each items name from the array.
+
+ ```js
+function MyBeers(beer) {
+
+  const favBeers = JSON.parse(window.localStorage.getItem('beers'))
+  console.log(favBeers)
+
+  return (
+    <>
+      <p>My Beers</p>
+      <div className="favBeers">
+        <ul key={beer.id}>
+          <li>
+            {favBeers.map(beer => beer.name)}
+          </li>
+        </ul>
+      </div>
+    </>
+  )
+}
+  
+export default MyBeers
+
+ ```
 
 
 ## About
