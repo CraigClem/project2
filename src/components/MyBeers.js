@@ -3,8 +3,6 @@ function MyBeers(beer) {
   const favBeers = JSON.parse(window.localStorage.getItem('beers'))
   console.log(favBeers)
 
-
-
   return (
     <>
       <p>My Beers</p>
@@ -15,10 +13,8 @@ function MyBeers(beer) {
           </li>
         </ul>
       </div>
-
     </>
   )
-
 }
   
 export default MyBeers

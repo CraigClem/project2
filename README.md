@@ -224,6 +224,29 @@ export default MyBeers
 
 
 ## About
+
+The About page is a static page displaying a single image for aesthetics only. 
+
+```js
+
+function About() {
+
+  return (
+    <div className="about-container">
+      <img className="about" src="https://creativesupply.com/wp-content/uploads/2018/07/05_BrewDog-810x540.png" alt="about"/>
+    </div>
+  )
+
+}
+
+export default About
+
+```
+
+
+## Lessons Leaned
+
+After spending just over a week learning React and beig introduced to the concept of API's and get requests, this fast paced 48hr paired programming challenge helped consolidate the some of the basic fundementals of React, creating a single page app's, making GET requests and also accessing and displaying specific data from API array of Objects. 
 ​
 
 ​
