@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ​
 Using React we had 48hrs to create an app which consumned a public API and had several components.
 ​
-### Technnolgies
+### Technolgies
 ​
 - React
 - Node.js
