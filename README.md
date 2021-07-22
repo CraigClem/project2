@@ -21,14 +21,14 @@ Using React we had 48hrs to create an app which consumned a public API and had s
 ​
 ## Approach
 
-This was our first project using React, querying API's and working on a project as a pair. After reviewing various public API's we found a Punk Beer API and felt that there was a good amount of accessible data that we could use to build a small app in 48hrs.
+This was our first project using React, querying API's and working on a project as a pair. After reviewing various public API's we found a Punk Beer API and felt that there was a good amount of accessible data that we could use to build a small app in 48hrs. As this was the first time coding a project with another person and only having 48hrs, we used VS Code's Live Share Extension so that we could work on the same project at the same time, helping one another and without having the worry about version control. 
 
 ## The App
 
 The app is made up of six components:
 
 ## Home
-This page displays the Brew Dog Logo which when clicked forwards the user to the Beer Index page using { Link } from React-router-dom
+This page displays the Brew Dog Logo which when clicked forwards the user to the Beer Index page using { Link } from React-router-dom.
 
 ```js
 
@@ -47,7 +47,7 @@ function Home() {
 
 ## Navbar
 
-The Nav Bar is accessible on all pages as it is not placed within the switch tags on the BrowserRouter
+The Nav Bar is accessible on all pages as it is not placed within the switch tags on the BrowserRouter.
 
 ```js 
 
@@ -170,7 +170,7 @@ return  <Link key={beer.id} to={`/beers/${beer.id}`}>
 
 ## MyBeers 
 
-We created the MyBeers component so that user could create and store a list of the beers they had tried or of their favorite beers. Within the ShowBeer component we added a button which when clicked, stored the specific beer in local storage using setItem, updated the favBeerArray and then pushed the user to the myBeers page using the useHistory hook. 
+We created the MyBeers component so that user could create and store a list of the beers they had tried or of their favourite beers. Within the ShowBeer component we added a button which when clicked, stored the specific beer in local storage using setItem, updated the favBeerArray and then pushed the user to the myBeers page using the useHistory hook. 
 
 ```js
 const history = useHistory()
@@ -196,7 +196,7 @@ let favBeerArray = []
 
  ``` 
 
- We then got the favortite beer array from local storage and displayed each items name from the array.
+ We then got the favourite beer array from local storage and displayed each items name from the array.
 
  ```js
 function MyBeers(beer) {
@@ -244,9 +244,18 @@ export default About
 ```
 
 
+## Challenges
+
+As this was a fast paced project and React being something complety new to me there were a number of bumps along the road! Mapping the data and displaying it in the browser took longer than I had hoped and this was mainly down to getting to grips with the syntax for JS when in JSX. The second challenge I faced was creating the filter function and lastly to create the Favourite Beers section, it took me a little longer than I hoped to grasp sprading the array and updating and also Parsing as JSON.
+
+## Wins 
+
+Overall, I really enjoyed using React as JavaScript Library and appreciated how rapidly you can create which to user can appear to be a complex multi-page site and I'm excited to create more using React and gain a deeper understanding of useState, life cycles and many of the other hooks it has to offer. So, in short, this project has helped widen my scope for how to build an app and the benifits of a single page app.
+
 ## Lessons Leaned
 
-After spending just over a week learning React and beig introduced to the concept of API's and get requests, this fast paced 48hr paired programming challenge helped consolidate the some of the basic fundementals of React, creating a single page app's, making GET requests and also accessing and displaying specific data from API array of Objects. 
+After spending just over a week learning React and being introduced to the concept of API's and get requests, this fast paced 48hr paired programming challenge helped consolidate the some of the basic fundementals of React, creating a single page app's, making GET requests and also accessing and displaying specific data from API array of Objects.
+
 ​
 
 ​
