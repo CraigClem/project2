@@ -243,10 +243,11 @@ export default About
 
 ```
 
-
 ## Challenges
 
 As this was a fast paced project and React being something complety new to me there were a number of bumps along the road! Mapping the data and displaying it in the browser took longer than I had hoped and this was mainly down to getting to grips with the syntax for JS when in JSX. The second challenge I faced was creating the filter function and lastly to create the Favourite Beers section, it took me a little longer than I hoped to grasp sprading the array and updating and also Parsing as JSON.
+
+Lastly, due the above challenges the CSS was negleted so I intend on revisiting this project and updating all of the styling to offer a more polished, complete product.  
 
 ## Wins 
 
