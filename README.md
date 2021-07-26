@@ -251,13 +251,13 @@ export default About
 
 ## Challenges
 
-As this was a fast paced project and React being something complety new to me there were a number of bumps along the road! Mapping the data and displaying it in the browser took longer than I had hoped and this was mainly down to getting to grips with the syntax for JS when in JSX. The second challenge I faced was creating the filter function and lastly to create the Favourite Beers section, it took me a little longer than I hoped to grasp sprading the array and updating and also Parsing as JSON.
+As this was a fast paced project and React being something completely new to me there were a number of bumps along the road! Mapping the data and displaying it in the browser took longer than I had hoped and this was mainly down to getting to grips with the syntax for JS when in JSX. The second challenge I faced was creating the filter function and lastly to create the Favourite Beers section, it took me a little longer than I hoped to grasp spreading the array and updating and also Parsing as JSON.
 
-Lastly, due the above challenges the CSS was negleted so I intend on revisiting this project and updating all of the styling to offer a more polished, complete product.  
+Lastly, due the above challenges the CSS was neglected so I intend on revisiting this project and updating all of the styling to offer a more polished, complete product.  
 
 ## Wins 
 
-Overall, I really enjoyed using React as JavaScript Library and appreciated how rapidly you can create which to user can appear to be a complex multi-page site and I'm excited to create more using React and gain a deeper understanding of useState, life cycles and many of the other hooks it has to offer. So, in short, this project has helped widen my scope for how to build an app and the benifits of a single page app.
+Overall, I really enjoyed using React as JavaScript Library and appreciated how rapidly you can create which to user can appear to be a complex multi-page site and I'm excited to create more using React and gain a deeper understanding of useState, life cycles and many of the other hooks it has to offer. So, in short, this project has helped widen my scope for how to build an app and the benefits of a single page app.
 
 ## Lessons Leaned
 
