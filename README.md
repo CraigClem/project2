@@ -68,6 +68,10 @@ And we Route each path to its component.
 
 ## BeerIndex
 
+<img src="images /Screenshot 2021-07-26 at 10.08.17.png"/>
+
+
+
 The BeerIndex is where most the apps functionality takes place as this where we make our async GET requests to the API, set state and display the results. We used React.UseState and Axios to make our GET requests on the intital page mount and then stored the results in state (setBeers).
 
 ```js
@@ -142,6 +146,8 @@ const handleInput = (e) => {
 
 
 ## ShowBeer
+
+<img src="images /Screenshot 2021-07-26 at 10.05.38.png"/>
 
 The ShowBeer page is a detailed view of a single beer. We used the { useParams } hook to create a unique path for each beer which was the beer Objects id. [ SetBeers(response.data[0]) ]
 
